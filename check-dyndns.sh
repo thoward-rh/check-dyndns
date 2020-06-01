@@ -26,4 +26,5 @@ else
     exit 1
 fi
 
-exit 1
+# if nothing verified or gets to this point.
+exit 3
