@@ -12,11 +12,8 @@ If you want to include the DNS name to check when calling the script (replace ww
 ```
 ./check-dyndns.sh www.my-dyndns.com
 ```
-If you want to enter the DNS name from within the script:
+If you want to enter the DNS name from within the script you will be prompted for the DNS name to perform the match.
 ```
 ./check-dyndns.sh www.my-dyndns.com
-```
-...and you will be prompted for the DNS name to perform the match.
-```
 Please enter the URL you want to check: 
 ```
