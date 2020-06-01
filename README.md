@@ -8,7 +8,15 @@ chmod +x check-dyndns.sh
 ```
 
 # usage
-If you want to enter the URL within the script (replace www.my-dyndns.com with your dyndns record):
+If you want to include the DNS name to check when calling the script (replace www.my-dyndns.com with your dyndns record):
 ```
-chmod +x check-dyndns.sh www.my-dyndns.com
+./check-dyndns.sh www.my-dyndns.com
+```
+If you want to enter the DNS name from within the script:
+```
+./check-dyndns.sh www.my-dyndns.com
+```
+...and you will be prompted for the DNS name to perform the match.
+```
+Please enter the URL you want to check: 
 ```
