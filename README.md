@@ -1,5 +1,5 @@
 # check-dyndns
-This will check if your dyndns record is the same as your NAT IP address.
+This will check if your dyndns record is the same as your NAT IP address. This should be useful for troubleshooting that your dyndns is working fine and updated correctly.
 
 # preparation
 make sure you enable execution for the script
