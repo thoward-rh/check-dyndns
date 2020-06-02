@@ -6,7 +6,7 @@ HOSTNAME=$1
 # Prompt for input if no host name is given.
 while [[ $HOSTNAME = "" ]]
 do
-read -p "Please enter the URL you want to check: " HOSTNAME
+read -p "Please enter the DNS name you want to check: " HOSTNAME
 done
 
 # Get the IPs we need to check.

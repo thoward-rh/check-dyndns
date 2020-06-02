@@ -10,6 +10,21 @@ USG_HOSTNAME=$1
 USG_USERNAME=$2
 INTERFACE_NAME=$3
 
+while [[ $USG_HOSTNAME = "" ]]
+do
+read -p "Please enter the hostname or IP of the USG: " USG_HOSTNAME
+done
+
+while [[ $USG_USERNAME = "" ]]
+do
+read -p "Please enter the username for the device: " USG_USERNAME
+done
+
+while [[ $INTERFACE_NAME = "" ]]
+do
+read -p "Please enter the interface name which you need to trigger update for dyndns (ie pppoe0 or eth0): " INTERFACE_NAME
+done
+
 # Command will be like this: update dns dynamic interface pppoe0
 # ssh username@hostname "vbash -ic 'update dns dynamic interface pppoe0'"
 ssh $USG_USERNAME@$USG_HOSTNAME "vbash -ic 'update dns dynamic interface $INTERFACE_NAME'"
