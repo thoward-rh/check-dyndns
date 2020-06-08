@@ -17,3 +17,6 @@ If you want to enter the DNS name from within the script you will be prompted fo
 $./check-dyndns.sh www.my-dyndns.com
 Please enter the URL you want to check: 
 ```
+
+# trigger-USG-dynns-update
+This script is used to trigger a forced update of dyndns service from Ubiquiti USG. It should work for EdgeRouterX as well. Check to ensure you have accepted the SSH keys from the gateway first and follow the steps. This script could be modified to return the output at the USG. Will get around to that. It will not try to update DynDNS if it finds it is already up to date.
